@@ -1,0 +1,24 @@
+{"schemes": [
+    "https"
+  ],"swagger": "2.0","paths":{"/home":{"get":{"summary": "greets the user","parameters": [
+          {
+            "in": "query",
+            "name": "greeting",
+            "type": "string",
+            "description": "Greeting sent by the user",
+            "default": "hello"
+          }
+        ],"responses":{"200":{"schema": {
+              "type": "object",
+              "properties": {
+                "greeting": {
+                  "type": "string"
+                }
+              }
+            },"examples":{"application/json": {
+                "greeting": "hello world!!!"
+              }},"description": "Success"}}}}},"info": {
+    "description": "First API",
+    "title": "myAPI",
+    "version": "v1"
+  }}
